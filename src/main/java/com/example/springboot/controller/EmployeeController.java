@@ -82,9 +82,9 @@ public class EmployeeController {
 			System.out.println("firstname details");
 			employees = employeeRepository.findByFirstName(searchText);
 
-		}else if(searchByKey.equals("LastName")){
+		}/*else if(searchByKey.equals("LastName")){
 			employees = employeeRepository.findByLastName(searchText);
-		}
+		}*/
 		return ResponseEntity.ok().body(employees);
 		
 	}
